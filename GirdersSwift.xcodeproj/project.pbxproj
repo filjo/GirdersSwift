@@ -24,9 +24,8 @@
 /* Begin PBXBuildFile section */
 		40ADA41C20C02E1C00703B4E /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40ADA41B20C02E1C00703B4E /* Container.swift */; };
 		40ADA41F20C0333B00703B4E /* TestContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40ADA41E20C0333B00703B4E /* TestContainer.swift */; };
-		7D45169E3251943569170BBC /* Pods_UnitTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F928DF890B5B2241F58230A /* Pods_UnitTest.framework */; };
-		8B5212FC473ED696EE78E1BA /* Pods_UnitTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 911CFB332010A59C00D7DEA6 /* Pods_UnitTest.framework */; };
-		911CFB302010A58100D7DEA6 /* Pods_GirdersSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 911CFB312010A58100D7DEA6 /* Pods_GirdersSwift.framework */; };
+		60D07403219DACFB00D4ABD7 /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D07401219DACFB00D4ABD7 /* SwiftyBeaver.framework */; };
+		60D07404219DACFB00D4ABD7 /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D07402219DACFB00D4ABD7 /* PromiseKit.framework */; };
 		CA19213D1F5567C6002615ED /* TestSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA19213C1F5567C6002615ED /* TestSerialization.swift */; };
 		CA1C227F1F55565F00229381 /* TestRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1C227E1F55565F00229381 /* TestRequest.swift */; };
 		CA1E50BA1F5987F300A9FA8A /* TestConfigUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1E50B91F5987F300A9FA8A /* TestConfigUtil.swift */; };
@@ -69,7 +68,6 @@
 		E8A635BC2024A73300A3021E /* ResponseHandlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A635BB2024A73300A3021E /* ResponseHandlers.swift */; };
 		E8A72DBB1F445AD200BAD955 /* DateStringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A72DBA1F445AD200BAD955 /* DateStringUtils.swift */; };
 		E8AD45501F34B51200B9F293 /* GirdersSwift-Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = E8AD454F1F34B4F300B9F293 /* GirdersSwift-Swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E8B451891F30C06100DC14B8 /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8B451881F30C06100DC14B8 /* SwiftyBeaver.framework */; };
 		E8B4518B1F30C07E00DC14B8 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B4518A1F30C07E00DC14B8 /* Log.swift */; };
 		E8BEE0031F4AED0F0070BBF5 /* GRSecurity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8BEE0021F4AED0F0070BBF5 /* GRSecurity.framework */; };
 		E8E875A61F34A2D6007F4715 /* GirdersSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = E8E875A51F34A2D6007F4715 /* GirdersSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -107,16 +105,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		34E1B865F60707EC702A6657 /* Pods_GirdersSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GirdersSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3E504E1344314B7CF0B0C5E1 /* Pods-UnitTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UnitTest/Pods-UnitTest.debug.xcconfig"; sourceTree = "<group>"; };
 		40ADA41B20C02E1C00703B4E /* Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
 		40ADA41E20C0333B00703B4E /* TestContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestContainer.swift; sourceTree = "<group>"; };
-		4F928DF890B5B2241F58230A /* Pods_UnitTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UnitTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		779892404BD28B4F7898A7B1 /* Pods-UnitTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-UnitTest/Pods-UnitTest.release.xcconfig"; sourceTree = "<group>"; };
-		850D68D85BC7AC1F788B2DD6 /* Pods-UnitTest.coverage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitTest.coverage.xcconfig"; path = "Pods/Target Support Files/Pods-UnitTest/Pods-UnitTest.coverage.xcconfig"; sourceTree = "<group>"; };
-		911CFB312010A58100D7DEA6 /* Pods_GirdersSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_GirdersSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		911CFB332010A59C00D7DEA6 /* Pods_UnitTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_UnitTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C0F210B6EB80754B239F32F4 /* Pods-GirdersSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GirdersSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GirdersSwift/Pods-GirdersSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		60D07401219DACFB00D4ABD7 /* SwiftyBeaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyBeaver.framework; path = Carthage/Build/iOS/SwiftyBeaver.framework; sourceTree = "<group>"; };
+		60D07402219DACFB00D4ABD7 /* PromiseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PromiseKit.framework; path = Carthage/Build/iOS/PromiseKit.framework; sourceTree = "<group>"; };
 		CA19213C1F5567C6002615ED /* TestSerialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSerialization.swift; sourceTree = "<group>"; };
 		CA1C227E1F55565F00229381 /* TestRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRequest.swift; sourceTree = "<group>"; };
 		CA1E50B91F5987F300A9FA8A /* TestConfigUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestConfigUtil.swift; sourceTree = "<group>"; };
@@ -132,8 +124,6 @@
 		CAD5E23B1F4C5DEB000B4DCE /* TestUtilDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUtilDictionary.swift; sourceTree = "<group>"; };
 		CAEBA31F1F4477A2003C9193 /* TestRequestGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRequestGenerator.swift; sourceTree = "<group>"; };
 		CAEBA3211F447CC1003C9193 /* TestHTTPUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHTTPUtil.swift; sourceTree = "<group>"; };
-		D3C42DCD874731A80E7D079E /* Pods-GirdersSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GirdersSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-GirdersSwift/Pods-GirdersSwift.release.xcconfig"; sourceTree = "<group>"; };
-		E0495BDA3511DEDDB6BE9E8E /* Pods-GirdersSwift.coverage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GirdersSwift.coverage.xcconfig"; path = "Pods/Target Support Files/Pods-GirdersSwift/Pods-GirdersSwift.coverage.xcconfig"; sourceTree = "<group>"; };
 		E80036AF1F5D828600D02137 /* billTest.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = billTest.jpg; path = GirdersSwift/src/test/resources/billTest.jpg; sourceTree = SOURCE_ROOT; };
 		E81F717120B5FEF5001B9B24 /* SecureStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureStorage.swift; sourceTree = "<group>"; };
 		E81F717320B5FF49001B9B24 /* KeychainStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStorage.swift; sourceTree = "<group>"; };
@@ -164,7 +154,6 @@
 		E8A635BB2024A73300A3021E /* ResponseHandlers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseHandlers.swift; sourceTree = "<group>"; };
 		E8A72DBA1F445AD200BAD955 /* DateStringUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateStringUtils.swift; sourceTree = "<group>"; };
 		E8AD454F1F34B4F300B9F293 /* GirdersSwift-Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GirdersSwift-Swift.h"; sourceTree = "<group>"; };
-		E8B451881F30C06100DC14B8 /* SwiftyBeaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyBeaver.framework; path = frameworks/SwiftyBeaver.framework; sourceTree = "<group>"; };
 		E8B4518A1F30C07E00DC14B8 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		E8BEE0021F4AED0F0070BBF5 /* GRSecurity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GRSecurity.framework; path = framework/GRSecurity.framework; sourceTree = "<group>"; };
 		E8E875A51F34A2D6007F4715 /* GirdersSwift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GirdersSwift.h; sourceTree = "<group>"; };
@@ -176,10 +165,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				911CFB302010A58100D7DEA6 /* Pods_GirdersSwift.framework in Frameworks */,
+				60D07403219DACFB00D4ABD7 /* SwiftyBeaver.framework in Frameworks */,
+				60D07404219DACFB00D4ABD7 /* PromiseKit.framework in Frameworks */,
 				E8BEE0031F4AED0F0070BBF5 /* GRSecurity.framework in Frameworks */,
 				E8EEB16A1F335D210064E3C9 /* Security.framework in Frameworks */,
-				E8B451891F30C06100DC14B8 /* SwiftyBeaver.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,27 +178,12 @@
 			files = (
 				E852E0FC1F4ED8C600BF7C54 /* GRSecurity.framework in Frameworks */,
 				E878B71F1F0E29450052D1C3 /* GirdersSwift.framework in Frameworks */,
-				7D45169E3251943569170BBC /* Pods_UnitTest.framework in Frameworks */,
-				8B5212FC473ED696EE78E1BA /* Pods_UnitTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		05E70503E624FD47592E9D8E /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				C0F210B6EB80754B239F32F4 /* Pods-GirdersSwift.debug.xcconfig */,
-				D3C42DCD874731A80E7D079E /* Pods-GirdersSwift.release.xcconfig */,
-				3E504E1344314B7CF0B0C5E1 /* Pods-UnitTest.debug.xcconfig */,
-				779892404BD28B4F7898A7B1 /* Pods-UnitTest.release.xcconfig */,
-				E0495BDA3511DEDDB6BE9E8E /* Pods-GirdersSwift.coverage.xcconfig */,
-				850D68D85BC7AC1F788B2DD6 /* Pods-UnitTest.coverage.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		40ADA41A20C02E0600703B4E /* dependencyInjection */ = {
 			isa = PBXGroup;
 			children = (
@@ -229,14 +203,11 @@
 		9F15D8391FA98D9D283D5CB0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				60D07402219DACFB00D4ABD7 /* PromiseKit.framework */,
+				60D07401219DACFB00D4ABD7 /* SwiftyBeaver.framework */,
 				E8376A171F55DA62002F0339 /* GRSecurity.framework */,
-				911CFB332010A59C00D7DEA6 /* Pods_UnitTest.framework */,
-				911CFB312010A58100D7DEA6 /* Pods_GirdersSwift.framework */,
 				E8BEE0021F4AED0F0070BBF5 /* GRSecurity.framework */,
 				E8EEB1691F335D210064E3C9 /* Security.framework */,
-				E8B451881F30C06100DC14B8 /* SwiftyBeaver.framework */,
-				34E1B865F60707EC702A6657 /* Pods_GirdersSwift.framework */,
-				4F928DF890B5B2241F58230A /* Pods_UnitTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -338,7 +309,6 @@
 			children = (
 				E878B6FB1F0E25BF0052D1C3 /* GirdersSwift */,
 				E878B6FA1F0E25BF0052D1C3 /* Products */,
-				05E70503E624FD47592E9D8E /* Pods */,
 				9F15D8391FA98D9D283D5CB0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -460,12 +430,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E878B7011F0E25BF0052D1C3 /* Build configuration list for PBXNativeTarget "GirdersSwift" */;
 			buildPhases = (
-				A49AE46EDA3D9093EE960583 /* [CP] Check Pods Manifest.lock */,
 				E878B6F41F0E25BF0052D1C3 /* Sources */,
 				E878B6F51F0E25BF0052D1C3 /* Frameworks */,
 				E878B6F61F0E25BF0052D1C3 /* Headers */,
 				E878B6F71F0E25BF0052D1C3 /* Resources */,
-				1075B9B473A4687030ADFDB4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -564,21 +532,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1075B9B473A4687030ADFDB4 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GirdersSwift/Pods-GirdersSwift-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		2EFC2804AF750641B14D6E42 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -616,24 +569,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UnitTest/Pods-UnitTest-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A49AE46EDA3D9093EE960583 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-GirdersSwift-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CAD5E2361F4C5BDC000B4DCE /* Trema */ = {
@@ -886,7 +821,6 @@
 		};
 		E878B7021F0E25BF0052D1C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C0F210B6EB80754B239F32F4 /* Pods-GirdersSwift.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				APPLICATION_EXTENSION_API_ONLY = YES;
@@ -902,6 +836,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/frameworks",
 					"$(PROJECT_DIR)/framework",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -926,7 +861,6 @@
 		};
 		E878B7031F0E25BF0052D1C3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D3C42DCD874731A80E7D079E /* Pods-GirdersSwift.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				APPLICATION_EXTENSION_API_ONLY = YES;
@@ -942,6 +876,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/frameworks",
 					"$(PROJECT_DIR)/framework",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -964,7 +899,6 @@
 		};
 		E878B7221F0E29450052D1C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3E504E1344314B7CF0B0C5E1 /* Pods-UnitTest.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -988,7 +922,6 @@
 		};
 		E878B7231F0E29450052D1C3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 779892404BD28B4F7898A7B1 /* Pods-UnitTest.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
@@ -1089,7 +1022,6 @@
 		};
 		E8BF0BB32019EB8C00D876D4 /* Coverage */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E0495BDA3511DEDDB6BE9E8E /* Pods-GirdersSwift.coverage.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				APPLICATION_EXTENSION_API_ONLY = YES;
@@ -1105,6 +1037,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/frameworks",
 					"$(PROJECT_DIR)/framework",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1129,7 +1062,6 @@
 		};
 		E8BF0BB42019EB8C00D876D4 /* Coverage */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 850D68D85BC7AC1F788B2DD6 /* Pods-UnitTest.coverage.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

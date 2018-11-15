@@ -1,0 +1,9 @@
+[submodule "Carthage/Checkouts/SwiftyBeaver"]
+	path = Carthage/Checkouts/SwiftyBeaver
+	url = https://github.com/SwiftyBeaver/SwiftyBeaver.git
+[submodule "Carthage/Checkouts/PromiseKit"]
+	path = Carthage/Checkouts/PromiseKit
+	url = https://github.com/mxcl/PromiseKit.git
+[submodule "Carthage/Checkouts/KeychainAccess"]
+	path = Carthage/Checkouts/KeychainAccess
+	url = https://github.com/kishikawakatsumi/KeychainAccess.git

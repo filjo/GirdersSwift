@@ -26,6 +26,7 @@
 		40ADA41F20C0333B00703B4E /* TestContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40ADA41E20C0333B00703B4E /* TestContainer.swift */; };
 		60D07403219DACFB00D4ABD7 /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D07401219DACFB00D4ABD7 /* SwiftyBeaver.framework */; };
 		60D07404219DACFB00D4ABD7 /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D07402219DACFB00D4ABD7 /* PromiseKit.framework */; };
+		60D07422219DB5BE00D4ABD7 /* GRSecurity.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 60D07421219DB5BE00D4ABD7 /* GRSecurity.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CA19213D1F5567C6002615ED /* TestSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA19213C1F5567C6002615ED /* TestSerialization.swift */; };
 		CA1C227F1F55565F00229381 /* TestRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1C227E1F55565F00229381 /* TestRequest.swift */; };
 		CA1E50BA1F5987F300A9FA8A /* TestConfigUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1E50B91F5987F300A9FA8A /* TestConfigUtil.swift */; };
@@ -47,12 +48,10 @@
 		E81F717620B602CE001B9B24 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81F717520B602CE001B9B24 /* Constants.swift */; };
 		E81F717920B61354001B9B24 /* HTTPPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81F717820B61354001B9B24 /* HTTPPromise.swift */; };
 		E82F15C51F4ACED100B7EC45 /* DefaultSessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82F15C41F4ACED100B7EC45 /* DefaultSessionDelegate.swift */; };
-		E8376A181F55DA62002F0339 /* GRSecurity.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E8376A171F55DA62002F0339 /* GRSecurity.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E83CEAA01F387D470030C6B8 /* ConfigUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CEA9F1F387D470030C6B8 /* ConfigUtil.swift */; };
 		E845D17920B3409500D3514D /* SSLUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = E845D17820B3409500D3514D /* SSLUtil.swift */; };
 		E845D17D20B3433F00D3514D /* SwiftyBeaverLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E845D17C20B3433F00D3514D /* SwiftyBeaverLogger.swift */; };
 		E84F811A204D76A50028E29D /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84F8119204D76A50028E29D /* Errors.swift */; };
-		E852E0FC1F4ED8C600BF7C54 /* GRSecurity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8BEE0021F4AED0F0070BBF5 /* GRSecurity.framework */; };
 		E858A4521F17AA9B008AD538 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E858A4511F17AA9B008AD538 /* Utils.swift */; };
 		E878B70F1F0E27AC0052D1C3 /* HTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = E878B7081F0E27650052D1C3 /* HTTP.swift */; };
 		E878B7101F0E27B00052D1C3 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E878B7091F0E27650052D1C3 /* HTTPClient.swift */; };
@@ -69,7 +68,6 @@
 		E8A72DBB1F445AD200BAD955 /* DateStringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A72DBA1F445AD200BAD955 /* DateStringUtils.swift */; };
 		E8AD45501F34B51200B9F293 /* GirdersSwift-Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = E8AD454F1F34B4F300B9F293 /* GirdersSwift-Swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8B4518B1F30C07E00DC14B8 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B4518A1F30C07E00DC14B8 /* Log.swift */; };
-		E8BEE0031F4AED0F0070BBF5 /* GRSecurity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8BEE0021F4AED0F0070BBF5 /* GRSecurity.framework */; };
 		E8E875A61F34A2D6007F4715 /* GirdersSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = E8E875A51F34A2D6007F4715 /* GirdersSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8EEB16A1F335D210064E3C9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8EEB1691F335D210064E3C9 /* Security.framework */; };
 /* End PBXBuildFile section */
@@ -92,13 +90,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		60D0741C219DB57400D4ABD7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				60D07422219DB5BE00D4ABD7 /* GRSecurity.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E8376A161F55DA4F002F0339 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E8376A181F55DA62002F0339 /* GRSecurity.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +116,7 @@
 		40ADA41E20C0333B00703B4E /* TestContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestContainer.swift; sourceTree = "<group>"; };
 		60D07401219DACFB00D4ABD7 /* SwiftyBeaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyBeaver.framework; path = Carthage/Build/iOS/SwiftyBeaver.framework; sourceTree = "<group>"; };
 		60D07402219DACFB00D4ABD7 /* PromiseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PromiseKit.framework; path = Carthage/Build/iOS/PromiseKit.framework; sourceTree = "<group>"; };
+		60D07421219DB5BE00D4ABD7 /* GRSecurity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GRSecurity.framework; path = framework/GRSecurity.framework; sourceTree = "<group>"; };
 		CA19213C1F5567C6002615ED /* TestSerialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSerialization.swift; sourceTree = "<group>"; };
 		CA1C227E1F55565F00229381 /* TestRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRequest.swift; sourceTree = "<group>"; };
 		CA1E50B91F5987F300A9FA8A /* TestConfigUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestConfigUtil.swift; sourceTree = "<group>"; };
@@ -130,7 +138,6 @@
 		E81F717520B602CE001B9B24 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E81F717820B61354001B9B24 /* HTTPPromise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPPromise.swift; sourceTree = "<group>"; };
 		E82F15C41F4ACED100B7EC45 /* DefaultSessionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultSessionDelegate.swift; sourceTree = "<group>"; };
-		E8376A171F55DA62002F0339 /* GRSecurity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GRSecurity.framework; path = framework/GRSecurity.framework; sourceTree = "<group>"; };
 		E83CEA9F1F387D470030C6B8 /* ConfigUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigUtil.swift; sourceTree = "<group>"; };
 		E845D17820B3409500D3514D /* SSLUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSLUtil.swift; sourceTree = "<group>"; };
 		E845D17C20B3433F00D3514D /* SwiftyBeaverLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyBeaverLogger.swift; sourceTree = "<group>"; };
@@ -155,7 +162,6 @@
 		E8A72DBA1F445AD200BAD955 /* DateStringUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateStringUtils.swift; sourceTree = "<group>"; };
 		E8AD454F1F34B4F300B9F293 /* GirdersSwift-Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GirdersSwift-Swift.h"; sourceTree = "<group>"; };
 		E8B4518A1F30C07E00DC14B8 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
-		E8BEE0021F4AED0F0070BBF5 /* GRSecurity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GRSecurity.framework; path = framework/GRSecurity.framework; sourceTree = "<group>"; };
 		E8E875A51F34A2D6007F4715 /* GirdersSwift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GirdersSwift.h; sourceTree = "<group>"; };
 		E8EEB1691F335D210064E3C9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -167,7 +173,6 @@
 			files = (
 				60D07403219DACFB00D4ABD7 /* SwiftyBeaver.framework in Frameworks */,
 				60D07404219DACFB00D4ABD7 /* PromiseKit.framework in Frameworks */,
-				E8BEE0031F4AED0F0070BBF5 /* GRSecurity.framework in Frameworks */,
 				E8EEB16A1F335D210064E3C9 /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -176,7 +181,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E852E0FC1F4ED8C600BF7C54 /* GRSecurity.framework in Frameworks */,
 				E878B71F1F0E29450052D1C3 /* GirdersSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -203,10 +207,9 @@
 		9F15D8391FA98D9D283D5CB0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				60D07421219DB5BE00D4ABD7 /* GRSecurity.framework */,
 				60D07402219DACFB00D4ABD7 /* PromiseKit.framework */,
 				60D07401219DACFB00D4ABD7 /* SwiftyBeaver.framework */,
-				E8376A171F55DA62002F0339 /* GRSecurity.framework */,
-				E8BEE0021F4AED0F0070BBF5 /* GRSecurity.framework */,
 				E8EEB1691F335D210064E3C9 /* Security.framework */,
 			);
 			name = Frameworks;
@@ -434,6 +437,7 @@
 				E878B6F51F0E25BF0052D1C3 /* Frameworks */,
 				E878B6F61F0E25BF0052D1C3 /* Headers */,
 				E878B6F71F0E25BF0052D1C3 /* Resources */,
+				60D0741C219DB57400D4ABD7 /* CopyFiles */,
 			);
 			buildRules = (
 			);

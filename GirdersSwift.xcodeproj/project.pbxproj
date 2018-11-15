@@ -27,6 +27,7 @@
 		60D07403219DACFB00D4ABD7 /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D07401219DACFB00D4ABD7 /* SwiftyBeaver.framework */; };
 		60D07404219DACFB00D4ABD7 /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D07402219DACFB00D4ABD7 /* PromiseKit.framework */; };
 		60D07441219DC41000D4ABD7 /* GRSecurity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D07421219DB5BE00D4ABD7 /* GRSecurity.framework */; };
+		60D07443219DC70200D4ABD7 /* GRSecurity.framework in GRSecurity */ = {isa = PBXBuildFile; fileRef = 60D07421219DB5BE00D4ABD7 /* GRSecurity.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CA19213D1F5567C6002615ED /* TestSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA19213C1F5567C6002615ED /* TestSerialization.swift */; };
 		CA1C227F1F55565F00229381 /* TestRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1C227E1F55565F00229381 /* TestRequest.swift */; };
 		CA1E50BA1F5987F300A9FA8A /* TestConfigUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1E50B91F5987F300A9FA8A /* TestConfigUtil.swift */; };
@@ -90,6 +91,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		60D07442219DC6F100D4ABD7 /* GRSecurity */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				60D07443219DC70200D4ABD7 /* GRSecurity.framework in GRSecurity */,
+			);
+			name = GRSecurity;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E8376A161F55DA4F002F0339 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -198,7 +210,6 @@
 		9F15D8391FA98D9D283D5CB0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				60D07421219DB5BE00D4ABD7 /* GRSecurity.framework */,
 				60D07402219DACFB00D4ABD7 /* PromiseKit.framework */,
 				60D07401219DACFB00D4ABD7 /* SwiftyBeaver.framework */,
 				E8EEB1691F335D210064E3C9 /* Security.framework */,
@@ -301,6 +312,7 @@
 		E878B6EF1F0E25BF0052D1C3 = {
 			isa = PBXGroup;
 			children = (
+				60D07421219DB5BE00D4ABD7 /* GRSecurity.framework */,
 				E878B6FB1F0E25BF0052D1C3 /* GirdersSwift */,
 				E878B6FA1F0E25BF0052D1C3 /* Products */,
 				9F15D8391FA98D9D283D5CB0 /* Frameworks */,
@@ -428,6 +440,7 @@
 				E878B6F51F0E25BF0052D1C3 /* Frameworks */,
 				E878B6F61F0E25BF0052D1C3 /* Headers */,
 				E878B6F71F0E25BF0052D1C3 /* Resources */,
+				60D07442219DC6F100D4ABD7 /* GRSecurity */,
 			);
 			buildRules = (
 			);

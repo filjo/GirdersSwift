@@ -1,0 +1,8 @@
+module ThreeDSInternal {
+    header "../../encryption/keyUtils/SecKeyToData.h"
+    header "../../encryption/keyUtils/KeyUtilsService.h"
+    header "../../../dependency/GMEllipticCurveCrypto/GMEllipticCurveCrypto.h"
+    header "../../../dependency/GMEllipticCurveCrypto/GMEllipticCurveCrypto+hash.h"
+    header "../../../dependency/DTTJailbreakDetection/Classes/DTTJailbreakDetection.h"
+    export *
+}
